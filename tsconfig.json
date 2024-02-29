@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@entities/*": ["src/entities/*"],
+      "@routes/*": ["src/routes/*"]
+    }
+  },
+  "include": ["index.ts", "src/**/*"]
+}
