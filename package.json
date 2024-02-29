@@ -1,0 +1,27 @@
+{
+  "name": "target-hunt-bridge",
+  "version": "1.0.0",
+  "description": "Shared schemas and validation between target-hunt services",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Trevodorax/target-hunt-bridge.git"
+  },
+  "keywords": [
+    "zod",
+    "validation",
+    "schema"
+  ],
+  "author": "Paul Gaudeaux ~ Trevodorax",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Trevodorax/target-hunt-bridge/issues"
+  },
+  "homepage": "https://github.com/Trevodorax/target-hunt-bridge#readme",
+  "dependencies": {
+    "zod": "^3.22.4"
+  }
+}
