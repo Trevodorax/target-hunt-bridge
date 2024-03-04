@@ -1,6 +1,6 @@
 {
   "name": "target-hunt-bridge",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Shared schemas and validation between target-hunt services",
   "main": "index.ts",
   "scripts": {
@@ -23,8 +23,5 @@
   "homepage": "https://github.com/Trevodorax/target-hunt-bridge#readme",
   "dependencies": {
     "zod": "^3.22.4"
-  },
-  "devDependencies": {
-    "basetag": "^2.1.0"
   }
 }

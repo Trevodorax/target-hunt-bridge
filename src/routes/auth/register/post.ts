@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-import { NewUserSchema } from "$/src/entities/user";
+import { NewUserSchema } from "../../../entities/user";
 
 export const BodySchema = z.object({
   user: NewUserSchema
