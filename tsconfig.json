@@ -1,7 +1,13 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
+    "module": "CommonJS",
+    "outDir": "lib",
+    "rootDir": "src",
+    "target": "es5",
+    "esModuleInterop": true,
+    "declaration": true,
     "strict": true
   },
-  "include": ["index.ts", "src/**/*"]
+  "include": ["src/**/*"]
 }

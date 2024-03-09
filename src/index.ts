@@ -5,17 +5,17 @@ import {
   UserCredentialsSchema, 
   UserEmailSchema, 
   UserPasswordSchema
-} from './src/entities/user'
+} from './entities/user'
 
 import { 
   BodySchema as AuthLoginPostBodySchema,
   ResponseSchema as AuthLoginPostResponseSchema
-} from './src/routes/auth/login/post'
+} from './routes/auth/login/post'
 
 import { 
   BodySchema as AuthRegisterPostBodySchema,
   ResponseSchema as AuthRegisterPostResponseSchema
-} from './src/routes/auth/register/post'
+} from './routes/auth/register/post'
 
 type NewUser = z.infer<typeof NewUserSchema>;
 type UserCredentials = z.infer<typeof UserCredentialsSchema>;
