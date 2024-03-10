@@ -17,6 +17,8 @@ import {
   ResponseSchema as AuthRegisterPostResponseSchema
 } from './routes/auth/register/post'
 
+import { ResponseSchema as AuthMeGetResponseSchema } from './routes/auth/me/get'
+
 type NewUser = z.infer<typeof NewUserSchema>;
 type UserCredentials = z.infer<typeof UserCredentialsSchema>;
 type UserEmail = z.infer<typeof UserEmailSchema>;
@@ -25,6 +27,7 @@ type AuthLoginPostBody = z.infer<typeof AuthLoginPostBodySchema>;
 type AuthLoginPostResponse = z.infer<typeof AuthLoginPostResponseSchema>;
 type AuthRegisterPostBody = z.infer<typeof AuthRegisterPostBodySchema>;
 type AuthRegisterPostResponse = z.infer<typeof AuthRegisterPostResponseSchema>;
+type AuthMeGetResponse = z.infer<typeof AuthMeGetResponseSchema>
 
 
 export {
@@ -52,4 +55,7 @@ export {
   AuthRegisterPostBody,
   AuthRegisterPostResponseSchema,
   AuthRegisterPostResponse,
+
+  AuthMeGetResponseSchema,
+  AuthMeGetResponse
 }
