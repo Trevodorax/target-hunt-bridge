@@ -1,13 +1,6 @@
 import { z } from 'zod'
 
 import {
-  NewUserSchema,
-  UserCredentialsSchema, 
-  UserEmailSchema, 
-  UserPasswordSchema
-} from './entities/user'
-
-import { 
   BodySchema as AuthLoginPostBodySchema,
   ResponseSchema as AuthLoginPostResponseSchema
 } from './routes/auth/login/post'
@@ -19,33 +12,22 @@ import {
 
 import { ResponseSchema as AuthMeGetResponseSchema } from './routes/auth/me/get'
 
-type NewUser = z.infer<typeof NewUserSchema>;
-type UserCredentials = z.infer<typeof UserCredentialsSchema>;
-type UserEmail = z.infer<typeof UserEmailSchema>;
-type UserPassword = z.infer<typeof UserPasswordSchema>;
+import { 
+  BodySchema as AuthMePatchBodySchema, 
+  ResponseSchema as AuthMePatchResponseSchema 
+} from './routes/auth/me/patch'
+
 type AuthLoginPostBody = z.infer<typeof AuthLoginPostBodySchema>;
 type AuthLoginPostResponse = z.infer<typeof AuthLoginPostResponseSchema>;
 type AuthRegisterPostBody = z.infer<typeof AuthRegisterPostBodySchema>;
 type AuthRegisterPostResponse = z.infer<typeof AuthRegisterPostResponseSchema>;
 type AuthMeGetResponse = z.infer<typeof AuthMeGetResponseSchema>
+type AuthMePatchBody = z.infer<typeof AuthMePatchBodySchema>
+type AuthMePatchResponse = z.infer<typeof AuthMePatchResponseSchema>
 
 
 export {
-  /* ===== TYPES ===== */
-  UserEmailSchema,
-  UserEmail,
-
-  UserPasswordSchema,
-  UserPassword,
-  
-  /* ===== DTOs ===== */
-  NewUserSchema,
-  NewUser,
-
-  UserCredentialsSchema,
-  UserCredentials,
-
-  /* ===== ROUTES ===== */
+  /* === AUTH === */
   AuthLoginPostBodySchema,
   AuthLoginPostBody,
   AuthLoginPostResponseSchema,
@@ -57,5 +39,10 @@ export {
   AuthRegisterPostResponse,
 
   AuthMeGetResponseSchema,
-  AuthMeGetResponse
+  AuthMeGetResponse,
+
+  AuthMePatchBodySchema,
+  AuthMePatchBody,
+  AuthMePatchResponseSchema,
+  AuthMePatchResponse
 }
