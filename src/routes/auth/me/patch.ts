@@ -1,10 +1,10 @@
-import { UserEmailSchema, UserPasswordSchema, UserPseudoSchema } from "src/entities/user";
 import { z } from "zod";
+import { UserEmailSchema, UserPasswordSchema, UserPseudoSchema } from "../../../entities/user";
 
 export const BodySchema = z.object({
-  pseudo: UserPseudoSchema,
-  email: UserEmailSchema,
-  password: UserPasswordSchema
+  pseudo: UserPseudoSchema.optional(),
+  email: UserEmailSchema.optional(),
+  password: UserPasswordSchema.optional()
 })
 
 export const ResponseSchema = z.object({
