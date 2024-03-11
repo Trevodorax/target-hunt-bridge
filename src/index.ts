@@ -17,6 +17,8 @@ import {
   ResponseSchema as AuthMePatchResponseSchema 
 } from './routes/auth/me/patch'
 
+import { FriendRequestSchema } from './entities/friendRequest'
+
 type AuthLoginPostBody = z.infer<typeof AuthLoginPostBodySchema>;
 type AuthLoginPostResponse = z.infer<typeof AuthLoginPostResponseSchema>;
 type AuthRegisterPostBody = z.infer<typeof AuthRegisterPostBodySchema>;
@@ -27,6 +29,9 @@ type AuthMePatchResponse = z.infer<typeof AuthMePatchResponseSchema>
 
 
 export {
+  /* === DTO === */
+  FriendRequestSchema,
+
   /* === AUTH === */
   AuthLoginPostBodySchema,
   AuthLoginPostBody,
@@ -44,5 +49,5 @@ export {
   AuthMePatchBodySchema,
   AuthMePatchBody,
   AuthMePatchResponseSchema,
-  AuthMePatchResponse
+  AuthMePatchResponse,
 }

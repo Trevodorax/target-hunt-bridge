@@ -14,3 +14,9 @@ export const UserCredentialsSchema = z.object({
   email: UserEmailSchema,
   password: UserPasswordSchema
 }).required()
+
+export const UserSchema = z.object({
+  id: z.string(),
+  pseudo: UserPseudoSchema,
+  email: UserEmailSchema,
+}).required()
