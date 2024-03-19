@@ -1,6 +1,6 @@
 {
   "name": "target-hunt-bridge",
-  "version": "1.0.21",
+  "version": "1.0.23",
   "description": "Shared schemas and validation between target-hunt services",
   "main": "lib/index.js",
   "scripts": {

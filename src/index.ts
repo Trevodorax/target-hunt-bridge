@@ -19,6 +19,8 @@ import {
 
 import { FriendRequestSchema } from './entities/friendRequest'
 
+import { UserSchema } from './entities/user'
+
 type AuthLoginPostBody = z.infer<typeof AuthLoginPostBodySchema>;
 type AuthLoginPostResponse = z.infer<typeof AuthLoginPostResponseSchema>;
 type AuthRegisterPostBody = z.infer<typeof AuthRegisterPostBodySchema>;
@@ -31,6 +33,7 @@ type AuthMePatchResponse = z.infer<typeof AuthMePatchResponseSchema>
 export {
   /* === DTO === */
   FriendRequestSchema,
+  UserSchema,
 
   /* === AUTH === */
   AuthLoginPostBodySchema,
